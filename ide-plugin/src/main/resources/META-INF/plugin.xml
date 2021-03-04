@@ -1,0 +1,14 @@
+<idea-plugin>
+    <id>com.irenedea.template</id>
+    <name>Kotlin Frontend Plugin Template</name>
+    <vendor>CoolPerson</vendor>
+    <description>
+        A template for kotlin compiler frontend plugins.
+    </description>
+    <depends>com.intellij.modules.platform</depends>
+    <depends>org.jetbrains.kotlin</depends>
+    <extensions defaultExtensionNs="org.jetbrains.kotlin">
+        <storageComponentContainerContributor implementation="com.irenedea.template.TemplateContainerContributor"/>
+    </extensions>
+    <idea-version since-build="201.*" until-build="203.*"/>
+</idea-plugin>
